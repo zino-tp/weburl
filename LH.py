@@ -36,7 +36,7 @@ def serve_html(html_content):
             self.end_headers()
             self.wfile.write(html_content.encode('utf-8'))
 
-    PORT = 8000
+    PORT = 8080
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print(f"Serving at port {PORT}")
         webbrowser.open(f'http://localhost:{PORT}')
